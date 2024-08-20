@@ -7,6 +7,8 @@ import db from "../../../firebase";
 import { useSearchParams } from "next/navigation";
 import { Box, Container, Paper, TextField, Typography, Button, Dialog, DialogTitle, DialogContent,
     DialogContentText, DialogActions, Grid, Card, CardActionArea, CardContent } from "@mui/material"
+import Head from "next/head";
+import ResponsiveAppBar from "../components/ResponsiveAppBar";
 
 export default function Flashcard() {
     const { isLoaded, isSignedIn, user } = useUser()
@@ -44,10 +46,18 @@ export default function Flashcard() {
       }
 
       return (
-        <Container maxWidth="100vw">
-          <Grid container spacing={3} sx={{ mt: 4 }}>
+        <>
+        <Head>
+        <title>FlashcardAI</title>
+        <meta name="description" content="Create flashcard from your text" />
+      </Head>
 
-            {flashcards.map((flashcard, index) => (
+      {/* ResponsiveAppBar for Navbar */}
+      <ResponsiveAppBar />
+        <Container maxWidth="100vw">
+          <Grid container spacing={3} sx={{ mt: 8 }}>
+
+          {flashcards.map((flashcard, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card>
                   <CardActionArea onClick={() => {
@@ -103,5 +113,6 @@ export default function Flashcard() {
 
           </Grid>
         </Container>
+        </>
     );
 }
