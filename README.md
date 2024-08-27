@@ -3,7 +3,7 @@
 # AI-Flashcard-SaaS
 
 
-FlashLearn is an AI-powered flashcard generation web application that allows users to create, store, and review flashcards. The app offers features such as secure authentication, topic-based flashcard generation, and a user-friendly interface for organizing and viewing collections. It also includes a demonstration of payment integration using Stripe.
+FlashPrepAI is an AI-powered flashcard generation web application that allows users to create, store, and review flashcards. The app offers features such as secure authentication, topic-based flashcard generation, and a user-friendly interface for organizing and viewing collections. It also includes a demonstration of payment integration using Stripe.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -37,8 +37,8 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/flashlearn.git
-   cd flashlearn
+   git clone https://github.com/Sakil78/AI-Flashcard-SaaS.git
+   cd AI-Flashcard-SaaS
    ```
 
 2. **Install dependencies**:
